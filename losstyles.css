@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Inter:wght@200&family=Noto+Serif+SC:wght@200;300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Faster One', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.titulaso {
+    background-color: darksalmon;
+}
+
+#gallery {
+    background-color: blanchedalmond;
+}
+
+.col-indice {
+    width: 15%;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    position: fixed;
+    background-color: blanchedalmond;
+}
+
+.index {
+    margin-left: 5%;
+}
+
+.col-medio {
+    margin-left: 15%;
+    width: 55%;
+    text-align: center;
+    float: left;
+}
+
+.col-noticias {
+    position: fixed;
+    margin-left: 70%;
+    overflow-y: scroll;
+    width: 30%;
+    float: left;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(243, 203, 155);
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.iframe2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.paddingart {
+    padding: 3%;
+    color: white;
+}
+
+.paddingart2 {
+    padding: 3%;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.noticias {
+    padding: 3%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.imgnoticias {
+    max-width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imgnoticiascentro {
+    max-width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The expanding image container */
+
+.container {
+    position: relative;
+    display: none;
+}
+
+
+/* Expanding image text */
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Closable button inside the expanded image */
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.galeriaImg {
+    margin-left: 5%;
+    nav-right: 5%;
+}
+
+.imagenesgal {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footerizq {
+    width: 33%;
+}
+
+.footermid {
+    width: 33%;
+}
+
+.footerleft {
+    width: 33%;
+}
+
+
+/*RESPONSIVE UwU*/
+
+@media only screen and (max-width: 600px) {
+    .col-indice {
+        width: 100%;
+        position: relative;
+        margin-left: 5%;
+    }
+    .col-medio {
+        width: 100%;
+        position: relative;
+        margin-left: 0%;
+    }
+    .col-noticias {
+        width: 100%;
+        position: relative;
+        margin-left: 0%;
+    }
+}

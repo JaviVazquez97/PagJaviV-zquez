@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="losstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="titulaso">
+        <H1>ESPLUGES DE LLOBREGAT</H1>
+    </div>
+
+    <div class="row">
+        <div class="col-indice">
+            <p class="index">INDEX</p>
+            <ul>
+                <li><a href="#gallery">GALERÍA</a></li>
+                <li><a href="#articulo1">FINESTRELLES</a></li>
+                <li><a href="#articulo2">CAN TURÉ</a></li>
+                <li><a href="#articulo3">SAN PEDRO</a></li>
+                <li><a href="#articulo4">PARQUE</a></li>
+            </ul>
+        </div>
+        <!--columna Central-->
+        <div class="col-medio">
+            <div class="galeriaImg">
+                <!--gallery-->
+                <div id="gallery" style="text-align:center">
+                    <h2>GALERÍA</h2>
+                    <p>Clic para expandir:</p>
+
+                    <!-- imgsgaleria-->
+                    <div class="row">
+                        <div class="column">
+                            <img class="imagenesgal" src="./img/esplu.jpg" alt="Esplugues-1" style="width:100%" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img class="imagenesgal" src="./img/esplu6.jpg" alt="Esplugues-2" style="width:100%" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img class="imagenesgal" src="./img/esplu5.jpg" alt="Esplugues-3" style="width:100%" onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img class="imagenesgal" src="./img/esplu4.jpg" alt="Esplugues-4" style="width:100%" onclick="myFunction(this);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+                <!--javascript sta en ruso-->
+                <script>
+                    function myFunction(imgs) {
+                        var expandImg = document.getElementById("expandedImg");
+                        var imgText = document.getElementById("imgtext");
+                        expandImg.src = imgs.src;
+                        imgText.innerHTML = imgs.alt;
+                        expandImg.parentElement.style.display = "block";
+                    }
+                </script>
+            </div>
+            <article class="paddingart2">
+                <h2 id="articulo1">Centro Comercial Finestrelles</h2>
+                <p>
+                    Situados en Esplugues de Llobregat, en Finestrelles Shopping Centre dispondrás de 40.000 metros cuadrados en los que encontrarás una amplia variedad de tiendas y restaurantes de las mejores marcas y para todas las edades. Además, podrás disfrutar de eventos,
+                    actividades y de nuestros servicios, pensados para toda la familia.
+                </p>
+                <img class="imgnoticiascentro" src="./img/finestrelles.jpg" alt="NO VA">
+            </article>
+            <article class="paddingart2">
+                <h2 id="articulo2">Museo Can Turé</h2>
+                <p>
+                    El museo Can Tinturé, en Esplugas de Llobregat, tiene su sede en una casa construida a fines del siglo XIX por el arquitecto Claudi Duran i Ventosa y es el primer museo monográfico de azulejo de muestra de España. El objetivo del museo es poner en relieve
+                    la importancia como expresión artística y patrimonio cultural del azulejo de muestra, que constituyó el revestimiento cerámico de muchos hogares de Cataluña y la península ibérica de la Edad Media hasta la actualidad.
+                </p>
+                <img class="imgnoticiascentro" src="./img/museo.jfif" alt="NO VA">
+            </article>
+            <article class="paddingart2">
+                <h2 id="articulo3">San Pedro Mártir</h2>
+                <p>
+                    La cumbre de San Pedro Mártir es el punto de intersección que divide los municipios de San Justo Desvern, Esplugas de Llobregat y Barcelona. Cerca se han construido depósitos de agua procedente del río Llobregat para el suministro a los habitantes de
+                    las poblaciones cercanas. En la década de 1970 se instaló una torre de telecomunicaciones que la hace identificable desde una gran parte de la metrópoli de Barcelona, produciendo un impacto visual destacable en la sierra de Collserola.
+                </p>
+                <img class="imgnoticiascentro" src="./img/pedrooo.jpg" alt="NO VA">
+            </article>
+            <article class="paddingart2">
+                <h2 id="articulo4">Parque Can Vidalet</h2>
+                <p>
+                    El parque de Can Vidalet es uno de los espacios verdes que tiene Esplugas de Llobregat. Se encuentra en un área densamente poblada: el barrio de Can Vidalet que le da nombre tiene cerca de 15 000 habitantes de los casi 50 000 de Esplugas, y el barrio
+                    adyacente de Pubilla Casas de Hospitalet de Llobregat cuenta con poco menos de 30 000 habitantes.
+
+                </p>
+                <img class="imgnoticiascentro" src="./img/canvi.png" alt="NO VA">
+            </article>
+        </div>
+        <!--BUA DE LOCOS LA COLUMNA DE LA DERECHA-->
+        <div class="col-noticias">
+            <h2>Ubicación</h2>
+            <div align="center">
+                <iframe class="iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.8397231865342!2d2.086695544870557!3d41.377566826195554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499735de76485%3A0xfdd50d8180e0e8a6!2sAyuntamiento%20de%20Esplugas%20de%20Llobregat!5e0!3m2!1ses!2ses!4v1643013267487!5m2!1ses!2ses"
+                    width="250" height="250" style="border: 0;;" allowfullscreen="no" loading="lazy"></iframe>
+            </div>
+            <article class="noticias">
+                <h2>robotín el androide cósmico</h2>
+                <p>
+                    Esplugues participa en un proyecto internacional innovador que pondrá a prueba un prototipo de robot autónomo de entrega para automatizar la logística de última milla, es decir, el último paso de la distribución de una mercancía a domicilio. El vehículo
+                    ha sido diseñado y fabricado por un equipo de la Universidad Politécnica de Cataluña (UPC) y su hub de investigación sobre movilidad CARNET (con participación de socios industriales como Seat y Volkswagen), coordinado por el Instituto
+                    de Robótica e Informática Industrial (IRI).
+                </p>
+                <img class="imgnoticias" src="./img/prototipo-vehiculo-autonomo-entrega-mercancias-esplugues-llobregar.png" alt="NO VA">
+                <a href="https://www.esmartcity.es/2022/01/20/prototipo-vehiculo-autonomo-entrega-mercancias-se-pondra-prueba-esplugues-llobregat"> Continuar leyendo...</a>
+            </article>
+            <article class="noticias">
+                <h2>Donaciones para la Palma</h2>
+                <p>
+                    La Asociación de Voluntarios de Protección Civil (AVPC) de Esplugues ha reunido cinco cajas con 500 kg de material diverso, procedentes de diferentes donaciones, para ayudar al vecindario de la Palma afectado por la erupción del volcán. La ayuda ha empezado
+                    a enviarse este 5 de octubre a la isla canaria a través de Correos. Entre el material recogido, se encuentran 4.000 máscaras quirúrgicas, 1.000 toallitas desinfectantes y 400 gafas de protección completa, así como guantes, gorras y
+                    otro material de protección aportados por el Ayuntamiento.
+                </p>
+                <img class="imgnoticias" src="./img/volcano.jfif" alt="NO VA">
+                <a href="https://www.elllobregat.com/noticia/20361/esplugues/esplugues-se-suma-a-los-municipios-que-se-vuelcan-con-la-palma.html"> Continuar leyendo...</a>
+            </article>
+            <article class="noticias">
+                <h2>Reciclaje en Esplugues</h2>
+                <p>
+                    Reciclar los envases de plástico tiene un evidente beneficio medioambiental. Desde mediados de diciembre, además, cada vez que lanzamos una lata o una botella de plástico de bebidas en alguno de los 163 contenedores amarillos de Esplugues podemos convertirlo
+                    en reciclos, una especie de moneda virtual que se puede cambiar por recompensas individuales o colectivas.
+                </p>
+                <img class="imgnoticias" src="./img/reciclar.jpeg" alt="NO VA">
+                <a href="https://www.esplugues.cat/noticias/reciclar-mes-ajudara-a-fer-mes-verda-la-ciutat">Continuar leyendo...</a>
+
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>
